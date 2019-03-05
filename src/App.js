@@ -5,25 +5,44 @@ import './App.css';
 
 function App() {
   return(
-<div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React Now
-          </a>
-        </header>
-      </div>
+    <div className="App">
+      <Navbar />
+      <Sidebar />
+      <Main />
+      <Footer />
+    </div>
+  )
+}
+
+function Navbar(){
+  return (
+    <div clasName="App--navbar">
+      <h1>Coffee Shop</h1>
+    </div>
   )
 }
 
 
+function Main (){
+  return(
+    <div clasName="App--main">
+      <h2>Main</h2>
+    </div>
+  )
+}
+function Sidebar (){
+  return(
+    <div clasName="App--sidebar">
+      <h2>Sidebar</h2>
+    </div>
+  )
+}
+function Footer (){
+  return(
+    <div clasName="App--footer">
+      <h5>&copy;2019 Coffee Shop Inc. </h5>
+    </div>
+  )
+}
 
 export default App;
